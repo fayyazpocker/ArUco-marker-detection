@@ -1,2 +1,2 @@
 # ArUco-marker-detection
-Detection of ArUco marker using OpenCV library
+Pose estimation using ArUco marker (OpenCV library)
