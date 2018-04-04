@@ -1,0 +1,19 @@
+steps to install aruco library:
+
+1. install opencv3 with python 2.7+ using the instructions given in
+	http://docs.opencv.org/3.0-beta/doc/tutorials/introduction/linux_install/linux_install.html
+	*after installing opencv3 to validate it ...open terminal and type python and check the version by cv2.__version__...it should be 3.3.0-dev
+	*but when you check the modules, you cant find any module named aruco in it..
+
+2. install aruco module by cloning the git opencv_contrib inside the opencv folder
+
+	git clone https://github.com/opencv/opencv_contrib.git
+
+	follow the instructions given in the link to install aruco module. inside it 
+	*cd <opencv_build_directory> means the release folder you have created before
+	*cmake.....PATH= ../../opencv_contrib/modules ../ (inside opencv folder)
+	*make -j5
+	*then go to release and then make sudo make install again...
+
+now you can validate the installation by typing 
+	import cv2.aruco
