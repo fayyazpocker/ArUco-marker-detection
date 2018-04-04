@@ -92,24 +92,4 @@ def calculate_Robot_State(img,aruco_list):  #gives the state of the bot (centre(
         robot_state[key] = (int(centre[0]), int(centre[1]), angle)#HOWEVER IF YOU ARE SCALING IMAGE AND ALL...THEN BETTER INVERT X AND Y...COZ THEN ONLY THE RATIO BECOMES SAME
     #print (robot_state)
 
-    return robot_state
-    
-'''
-det_aruco_list = {}
-while(True):
-    # Capture frame-by-frame
-    ret, frame = cap.read()
-    det_aruco_list=detect_Aruco(frame)
-    img = mark_Aruco(frame,det_aruco_list)
-    robot_state=calculate_Robot_State(img,det_aruco_list)
-    print robot_state
-
-    cv2.imshow('image',img)
-
-    if cv2.waitKey(1) & 0xFF == ord('q'):
-        break
- 
-# When everything done, release the capture
-cap.release()
-cv2.destroyAllWindows()
-'''
+    return robot_state    
