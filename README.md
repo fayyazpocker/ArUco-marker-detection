@@ -1,2 +1,2 @@
 # ArUco-marker-detection
-Pose estimation using ArUco marker (OpenCV library)
+2D orientation estimation using ArUco markers with the help of OpenCV.
